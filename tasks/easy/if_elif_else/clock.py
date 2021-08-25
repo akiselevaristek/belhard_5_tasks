@@ -59,7 +59,6 @@ def get_seconds(h: int, m: int, s: int) -> Union[int, str]:
             result = "Ошибка. Допустимое значение для минут 0..59"
     else:
         result = "Ошибка. Допустимое значение для часов 0..23"
-
     return result
 
 
@@ -68,5 +67,4 @@ if __name__ == '__main__':
     m_val = int(input('Введите количество минут m: '))
     s_val = int(input('Введите количество секунд s: '))
     if get_seconds(h_val, m_val, s_val) is not None:
-        print(f'Общее кол-во секунд с 00:00:00: '
-            f'{get_seconds(h_val, m_val, s_val)}')
+        print(f'Общее кол-во секунд с 00:00:00: ' f'{get_seconds(h_val, m_val, s_val)}')

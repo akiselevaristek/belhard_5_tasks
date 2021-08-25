@@ -25,6 +25,7 @@ def is_pow_2(number) -> bool:
         else:
             return False
 
+
 if __name__ == '__main__':
     assert is_pow_2(4)
     assert is_pow_2(16)
